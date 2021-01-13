@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>LEGO</title>
+  </head>
+
+
+  <body>
+
+	  	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top">
+	  		<div class="container">
+  		<a class="navbar-brand" href="#"><img src="../images/logo.png" class="logo" alt="Logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="boutique.html">Boutique</a>
+      </li>
+      <li class="nav-item"> 
+        <a class="nav-link" href="Apropos.html">À propos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="actualite.html">Actualités</a>
+      </li>
+    
+    </ul>
+  </div>
+</div>
+</nav>
+
+	<header class="shadow bg-white">
+	<img src="../images/bannierecontact.jpg" style="width: 100%" alt="Banniere contact">
+	</header>
+
+	<section class="container-fluid row text-center m-5 d-flex justify-content-between">
+
+		<div class="col-md-4">
+		<img src="../images/map.jpeg" style="width: 100% " id="map" class="img-fluid" alt="Responsive image">
+		</div>
+
+		<div class="col-md-4">
+		<h2>Nos boutiques</h2>
+		<p>Vous pouvez nous retrouver dans différentes villes de France. Il vous suffit de taper votre ville pour trouver votre magasin le plus proche.</p>
+
+		<nav class="navbar navbar-light bg-light">
+		  	<form class="form-inline">
+		    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+		  </form>
+		</nav>
+
+		</div>
+
+		<div class="col-md-4">
+		<h2>Nous contacter</h2>
+		<address class="infocontact">IUT info, Université Claude Bernard <br>69100 Villeurbanne </address> <p>Téléphone : 04.72.69.21.82 </p> <p> Mail : <a href="mailto:antoine.rollet@etu.univ-lyon1.fr">antoine.rollet@etu.univ-lyon1.fr</a> </p>
+		</div>
+
+	</section>
+
+
+	
+<section class="m-4">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contactez-nous</h2>
+    
+    <p class="text-center w-responsive mx-auto mb-5"> Vous avez des questions ou des suggestions ? N'hésitez pas à nous con tacter directement. Nous vous répondrons dans les plus brefs délais pour vous aider au mieux.</p>
+
+    <div class="row">
+        <div class="col-md-12 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Votre nom</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Votre email</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Sujet</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Votre message</label>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+            <div class="text-center text-md-right">
+                <a class="btn btn-outline-dark" onclick="document.getElementById('contact-form').submit();">Envoyer</a>
+            </div>
+
+		</div>
+    </div>
+
+</section>
+
+
+
+
+	<hr class="mt-5">
+	<footer class="row text-center d-flex">
+	<div class="col-sm-6">
+	<p>Conditions générales</p>
+	<p>Responsabilité des entreprises</p>
+	</div>
+
+	<div class="col-sm-6">
+	<p>À propos</p>
+	<p>Assistance</p>
+	</div>
+	</footer>
+
+
+ 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
